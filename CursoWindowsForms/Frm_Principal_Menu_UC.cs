@@ -75,5 +75,17 @@ namespace CursoWindowsForms
             Frm_Principal f = new Frm_Principal();
             f.ShowDialog();
         }
+
+        private void apagarAbaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!(Tbc_Aplicacoes.SelectedTab == null))
+            {
+                Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab);
+            }
+            else
+            {
+                MessageBox.Show("Não existe, Aba para apagar!...");
+            }
+        }
     }
 }
