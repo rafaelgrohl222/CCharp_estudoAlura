@@ -148,6 +148,12 @@
     <Compile Include="Formularios_Curso1_UC\Frm_ValidaSenha_UC.Designer.cs">
       <DependentUpon>Frm_ValidaSenha_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Questao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Questao.Designer.cs">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios_Curso1\Frm_DemonstracaoKey.resx">
@@ -198,6 +204,9 @@
     <EmbeddedResource Include="Formularios_Curso1_UC\Frm_ValidaSenha_UC.resx">
       <DependentUpon>Frm_ValidaSenha_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Questao.resx">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -229,6 +238,8 @@
     <Content Include="Imagem\Frm_Mascara.ico" />
     <Content Include="Imagem\Frm_Mascara.png" />
     <Content Include="Imagem\Frm_Principal.ico" />
+    <Content Include="Imagem\Frm_Question96x96.ico" />
+    <Content Include="Imagem\Frm_Question96x96.png" />
     <Content Include="Imagem\Frm_ValidaCPF.ico" />
     <Content Include="Imagem\Frm_ValidaCPF.png" />
     <Content Include="Imagem\Frm_ValidaCPF2.ico" />
