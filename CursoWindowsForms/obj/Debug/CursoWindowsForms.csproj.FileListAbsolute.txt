@@ -44,3 +44,4 @@ D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoW
 D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsForms\obj\Debug\CursoWindowsForms.Frm_Questao.resources
 D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsForms\obj\Debug\CursoWindowsForms.Formularios_Curso1_UC.Frm_ArquivoImagem_UC.resources
 D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsForms\obj\Debug\CursoWindowsForms.Frm_Login.resources
+D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsForms\obj\Debug\CursoWindowsForms.Frm_MouseEventos.resources
