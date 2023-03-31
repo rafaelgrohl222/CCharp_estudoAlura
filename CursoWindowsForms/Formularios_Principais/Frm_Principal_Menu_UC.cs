@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CursoWindowsForms.Formularios_Curso1_UC;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,10 +20,17 @@ namespace CursoWindowsForms
         int ControleValidaCPF = 0;
         int ControleValidaCPF2 = 0;
         int ControleValidaSenha = 0;
+        int ControleArquivoImagem = 0;
 
         public Frm_Principal_Menu_UC()
         {
             InitializeComponent();
+
+            novoToolStripMenuItem.Enabled = false;
+            apagarAbaToolStripMenuItem.Enabled = false;
+            abrirImagemToolStripMenuItem.Enabled = false;
+            menuPrincipalToolStripMenuItem.Enabled = false;
+            desconectarToolStripMenuItem.Enabled = false;
         }
         private void demostraçãoKeyToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -147,6 +155,84 @@ namespace CursoWindowsForms
             else
             {
                 MessageBox.Show("Não existe, Aba para apagar!...");
+            }
+        }
+
+        private void abrirImagemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Db = new OpenFileDialog();
+            Db.InitialDirectory = "D:\\CCharp_Projetos\\CCharp_Alura\\CursoWindowsForms\\curso\\CursoWindowsForms\\Imagens";// Barra dupla tiro o erro do diretório
+            Db.Filter = "PNG|*.PNG";//Filtro só ver um tipo de imagem
+            Db.Title = "Escolha a imagem";//Titulo
+
+            if (Db.ShowDialog() == DialogResult.OK)
+            {
+                string nomeAquivoImagem = Db.FileName;
+
+
+                ControleArquivoImagem += 1;
+
+                Frm_ArquivoImagem_UC u = new Frm_ArquivoImagem_UC(nomeAquivoImagem);
+                u.Dock = DockStyle.Fill;
+                TabPage TB = new TabPage();
+                TB.Name = "Arquivo Imagem - " + ControleArquivoImagem;//Nome do TabPage
+                TB.Text = "Arquivo Imagem - " + ControleArquivoImagem;//Nome Da aba
+                TB.ImageIndex = 6;
+                TB.Controls.Add(u);//adicionar meu TabPage dentro TabControl
+                Tbc_Aplicacoes.TabPages.Add(TB);//adicionar (Tbc_Aplicacoes nome TabControl) dentro TabPage
+            }
+        }
+
+        private void conectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Login f = new Frm_Login();
+            f.ShowDialog();
+
+            if (f.DialogResult == DialogResult.OK)
+            {
+                string senha = f.senha;
+                string login = f.login;
+
+                if (CursoWindowsBiblioteca.Cls_Uteis.validaSenhaLogin(senha) == true)
+                {
+                    novoToolStripMenuItem.Enabled = true;
+                    apagarAbaToolStripMenuItem.Enabled = true;
+                    abrirImagemToolStripMenuItem.Enabled = true;
+                    menuPrincipalToolStripMenuItem.Enabled = true;
+                    conectarToolStripMenuItem.Enabled = false;
+                    desconectarToolStripMenuItem.Enabled = true;
+
+                    MessageBox.Show("Bem vindo " + login + "! ", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Senha inválida! ", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Questao DB = new Frm_Questao("Frm_Question96x961", "Você deseja se desconectar?");
+            DB.ShowDialog();
+            //if (MessageBox.Show("Você deseja realmente validar o CPF?", "Mensagem de Validação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+            if (DB.DialogResult == DialogResult.Yes)
+            {
+                //Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab);
+
+                //Count= contar
+                for (int i = Tbc_Aplicacoes.TabPages.Count - 1; i >= 0; i+=-1)
+                {
+                    Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.TabPages[i]);
+                }
+
+                novoToolStripMenuItem.Enabled = false;
+                apagarAbaToolStripMenuItem.Enabled = false;
+                abrirImagemToolStripMenuItem.Enabled = false;
+                menuPrincipalToolStripMenuItem.Enabled = false;
+                conectarToolStripMenuItem.Enabled = true;
+                desconectarToolStripMenuItem.Enabled = false;
             }
         }
     }
