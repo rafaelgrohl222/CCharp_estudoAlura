@@ -35,7 +35,6 @@
             this.Btn_ValidaCPF = new System.Windows.Forms.Button();
             this.Btn_ValidaCPF2 = new System.Windows.Forms.Button();
             this.Btn_ValidaSenha = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_DemostracaoKey
@@ -51,7 +50,6 @@
             // 
             // Btn_HelloWorld
             // 
-            this.Btn_HelloWorld.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Btn_HelloWorld.Image = ((System.Drawing.Image)(resources.GetObject("Btn_HelloWorld.Image")));
             this.Btn_HelloWorld.Location = new System.Drawing.Point(132, 12);
             this.Btn_HelloWorld.Name = "Btn_HelloWorld";
@@ -63,7 +61,6 @@
             // 
             // Btn_Mascara
             // 
-            this.Btn_Mascara.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_Mascara.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Mascara.Image")));
             this.Btn_Mascara.Location = new System.Drawing.Point(252, 12);
             this.Btn_Mascara.Name = "Btn_Mascara";
@@ -75,7 +72,6 @@
             // 
             // Btn_ValidaCPF
             // 
-            this.Btn_ValidaCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Btn_ValidaCPF.Image = ((System.Drawing.Image)(resources.GetObject("Btn_ValidaCPF.Image")));
             this.Btn_ValidaCPF.Location = new System.Drawing.Point(12, 66);
             this.Btn_ValidaCPF.Name = "Btn_ValidaCPF";
@@ -87,7 +83,6 @@
             // 
             // Btn_ValidaCPF2
             // 
-            this.Btn_ValidaCPF2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Btn_ValidaCPF2.Image = ((System.Drawing.Image)(resources.GetObject("Btn_ValidaCPF2.Image")));
             this.Btn_ValidaCPF2.Location = new System.Drawing.Point(132, 66);
             this.Btn_ValidaCPF2.Name = "Btn_ValidaCPF2";
@@ -99,7 +94,6 @@
             // 
             // Btn_ValidaSenha
             // 
-            this.Btn_ValidaSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Btn_ValidaSenha.Image = ((System.Drawing.Image)(resources.GetObject("Btn_ValidaSenha.Image")));
             this.Btn_ValidaSenha.Location = new System.Drawing.Point(252, 66);
             this.Btn_ValidaSenha.Name = "Btn_ValidaSenha";
@@ -109,32 +103,18 @@
             this.Btn_ValidaSenha.UseVisualStyleBackColor = true;
             this.Btn_ValidaSenha.Click += new System.EventHandler(this.Btn_ValidaSenha_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(252, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 48);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Sair";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 176);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(377, 126);
             this.Controls.Add(this.Btn_ValidaSenha);
             this.Controls.Add(this.Btn_ValidaCPF2);
             this.Controls.Add(this.Btn_ValidaCPF);
             this.Controls.Add(this.Btn_Mascara);
             this.Controls.Add(this.Btn_HelloWorld);
             this.Controls.Add(this.Btn_DemostracaoKey);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "Frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
@@ -150,6 +130,5 @@
         private System.Windows.Forms.Button Btn_ValidaCPF;
         private System.Windows.Forms.Button Btn_ValidaCPF2;
         private System.Windows.Forms.Button Btn_ValidaSenha;
-        private System.Windows.Forms.Button button1;
     }
 }

@@ -16,10 +16,18 @@ namespace CursoWindowsForms
         {
             InitializeComponent();
         }
-        private void demostraçãoKeyToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void validaCPFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ValidaCPF f = new Frm_ValidaCPF();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void demonstraçãoKeyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_DemonstracaoKey f = new Frm_DemonstracaoKey();
-            f.MdiParent = this;//Se torna o o formulário pai
+            f.MdiParent = this;
             f.Show();
         }
 
@@ -37,21 +45,14 @@ namespace CursoWindowsForms
             f.Show();
         }
 
-        private void validaCPFToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_ValidaCPF f = new Frm_ValidaCPF();
-            f.MdiParent = this;
-            f.Show();
-        }
-
-        private void validaCPF2ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void valídaCPF2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_ValidaCPF2 f = new Frm_ValidaCPF2();
             f.MdiParent = this;
             f.Show();
         }
 
-        private void validaSenhaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void valídaSenhaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Frm_ValidaSenha f = new Frm_ValidaSenha();
             f.MdiParent = this;
@@ -61,13 +62,6 @@ namespace CursoWindowsForms
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void menuPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_Principal f = new Frm_Principal();
-            f.MdiParent = this;
-            f.Show();
         }
 
         private void cascataToolStripMenuItem_Click(object sender, EventArgs e)
