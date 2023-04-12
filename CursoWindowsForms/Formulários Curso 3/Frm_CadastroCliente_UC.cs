@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CursoWindowsFormsBiblioteca.Classes;
+using System.ComponentModel.DataAnnotations;
 
 namespace CursoWindowsForms
 {
@@ -91,8 +92,6 @@ namespace CursoWindowsForms
 
         private void novoToolStripButton_Click(object sender, EventArgs e)
         {
-            
-
             try
             {
                 Cliente.Unit C = new Cliente.Unit();
@@ -100,10 +99,9 @@ namespace CursoWindowsForms
                 C.ValidaClasse();
                 MessageBox.Show("Classe foi inicializada sem erros!", "ByTeBank",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            catch (Exception)
+            catch (ValidationException Ex)
             {
-
-                throw;
+                MessageBox.Show(Ex.Message, "ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
