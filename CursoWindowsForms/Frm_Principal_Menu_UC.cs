@@ -21,7 +21,7 @@ namespace CursoWindowsForms
         int ControleValidaCPF2 = 0;
         int ControleArquivoImagem = 0;
         int ControleCadastroClientes = 0;
-
+      
         public Frm_Principal_Menu_UC()
         {
             InitializeComponent();
@@ -31,7 +31,6 @@ namespace CursoWindowsForms
             abrirImagemToolStripMenuItem.Enabled = false;
             desconectarToolStripMenuItem.Enabled = false;
             cadastrosToolStripMenuItem.Enabled = false;
-
         }
 
         private void validaCPFToolStripMenuItem_Click(object sender, EventArgs e)
@@ -123,10 +122,6 @@ namespace CursoWindowsForms
             {
                 ApagaAba(Tbc_Aplicacoes.SelectedTab);
             }
-            else
-            {
-                MessageBox.Show("Não tem mais Abas, para fechar!");
-            }
         }
 
         private void abrirImagemToolStripMenuItem_Click(object sender, EventArgs e)
@@ -210,6 +205,7 @@ namespace CursoWindowsForms
                 desconectarToolStripMenuItem.Enabled = false;
                 cadastrosToolStripMenuItem.Enabled = false;
             }
+         
         }
 
         private void Tbc_Aplicacoes_MouseDown(object sender, MouseEventArgs e)
@@ -295,7 +291,7 @@ namespace CursoWindowsForms
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(ControleCadastroClientes == 0)
+            if (ControleCadastroClientes == 0)
             {
                 ControleCadastroClientes += 1;
                 Frm_CadastroCliente_UC U = new Frm_CadastroCliente_UC();
@@ -309,9 +305,12 @@ namespace CursoWindowsForms
             }
             else
             {
-                MessageBox.Show("Formulário de Cadastro de Clientes Aberto!","Banco ByteBank",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Não posso abrir o Cadastro de Clientes porque já está aberto.", "Banco ByteBank", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+
         }
+
         void ApagaAba(TabPage TB)
         {
             if (TB.Name == "Cadastro de Clientes")

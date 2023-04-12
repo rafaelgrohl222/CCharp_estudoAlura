@@ -121,7 +121,7 @@
     <Compile Include="Formulários Curso 3\Frm_CadastroCliente_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formulários Curso 3\Frm_CadastroCliente_UC.Designer.cs">
+    <Compile Include="Formulários Curso 3\Frm_CadastroCliente_UC.designer.cs">
       <DependentUpon>Frm_CadastroCliente_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários Curso 3\Frm_Menu_Flutuante.cs">

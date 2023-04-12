@@ -3,9 +3,9 @@ C:\WindowsForms\Curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\Cu
 C:\WindowsForms\Curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.dll
 C:\WindowsForms\Curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb
 C:\WindowsForms\Curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csprojAssemblyReference.cache
-D:\CCharp_Projetos\CCharp_Alura\windows-forms-parte-3-projeto-completo-aula-3\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll
-D:\CCharp_Projetos\CCharp_Alura\windows-forms-parte-3-projeto-completo-aula-3\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.pdb
-D:\CCharp_Projetos\CCharp_Alura\windows-forms-parte-3-projeto-completo-aula-3\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.AssemblyReference.cache
-D:\CCharp_Projetos\CCharp_Alura\windows-forms-parte-3-projeto-completo-aula-3\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CoreCompileInputs.cache
-D:\CCharp_Projetos\CCharp_Alura\windows-forms-parte-3-projeto-completo-aula-3\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.dll
-D:\CCharp_Projetos\CCharp_Alura\windows-forms-parte-3-projeto-completo-aula-3\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb
+D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.dll
+D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\bin\Debug\CursoWindowsFormsBiblioteca.pdb
+D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.AssemblyReference.cache
+D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.csproj.CoreCompileInputs.cache
+D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.dll
+D:\CCharp_Projetos\CCharp_Alura\CursoWindowsForms\curso\CursoWindowsForms\CursoWindowsFormsBiblioteca\obj\Debug\CursoWindowsFormsBiblioteca.pdb

@@ -52,7 +52,6 @@
             this.Controls.Add(this.Btn_Mouse);
             this.Name = "Frm_MouseEventos";
             this.Text = "Frm_MouseEventos";
-            this.Load += new System.EventHandler(this.Frm_MouseEventos_Load);
             this.ResumeLayout(false);
 
         }

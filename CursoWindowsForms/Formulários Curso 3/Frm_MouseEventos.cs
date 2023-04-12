@@ -41,10 +41,5 @@ namespace CursoWindowsForms
         {
             Btn_Mouse.Text = "Mouse Up";
         }
-
-        private void Frm_MouseEventos_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
