@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CursoWindowsFormsBiblioteca.Classes;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.VisualBasic;
 
 namespace CursoWindowsForms
 {
@@ -95,7 +96,7 @@ namespace CursoWindowsForms
             try
             {
                 Cliente.Unit C = new Cliente.Unit();
-                C.Id = Txt_Codigo.Text;
+                C = LeituraFormulario();
                 C.ValidaClasse();
                 MessageBox.Show("Classe foi inicializada sem erros!", "ByTeBank",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
@@ -123,6 +124,77 @@ namespace CursoWindowsForms
         private void LimpartoolStripButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Efetuei um clique sobre o botão LIMPAR");
+        }
+
+        Cliente.Unit LeituraFormulario()
+        {
+            Cliente.Unit C = new Cliente.Unit();
+
+            C.Id = Txt_Codigo.Text;
+            C.Nome = Txt_NomeCliente.Text;
+            C.NomeMae = Txt_NomeMae.Text;
+            C.NomePai = Txt_NomePai.Text;
+            //TemPai checkBox
+            if (Chk_TemPai.Checked)//selecionado
+            {
+                C.TemPai = true;
+            }
+            else
+            {
+                C.TemPai = false;
+            }
+            //Genero RadioButton (0 = masculino, 1 = feminino, 2 = 
+            if (Rdb_Masculino.Checked)
+            {
+                //0 = masculino
+                C.Genero = 0;
+            }
+            if (Rdb_Feminino.Checked)
+            {
+                //1 = feminino
+                C.Genero = 1;
+            }
+            if (Rdb_Indefinido.Checked)
+            {
+                //2 = indefinido
+                C.Genero = 2;
+            }
+            C.Cpf = Txt_CPF.Text;
+            C.Cep = Txt_CEP.Text;
+            C.Logradouro = Txt_Logradouro.Text;
+            C.Complemento = Txt_Complemento.Text;
+            C.Cidade = Txt_Cidade.Text;
+            C.Bairro = Txt_Bairro.Text;
+
+            if (Cmb_Estados.SelectedIndex < 0)//SelectedIndex verifica selecionado
+            {
+                C.Estado = "";
+            }
+
+            else
+            {
+                //Recebe o selecionado
+                C.Estado = Cmb_Estados.Items[Cmb_Estados.SelectedIndex].ToString();
+            }
+
+            C.Telefone = Txt_Telefone.Text;
+            C.Profissao = Txt_Profissao.Text;
+
+            //Saber se é número + referncia Microsoft.VisualBasic;
+            if (Information.IsNumeric(Txt_RendaFamiliar.Text))
+            {
+                Double vRenda = Convert.ToDouble(Txt_RendaFamiliar.Text);
+                if (vRenda < 0)
+                {
+                    C.RendaFamiliar = 0;
+                }
+                else
+                {
+                    C.RendaFamiliar = vRenda;
+                }
+            }
+
+            return C;
         }
     }
 }
